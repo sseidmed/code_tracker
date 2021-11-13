@@ -1,6 +1,8 @@
 # CodeTracker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.15.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.15.  
+
+As part of my Angular learning journey, I started creating app to practice my Front-End skills. This includes all the intricacies of front end frameworks, design, and web accessibility. I plan to complete 30 simple apps, more advanced of which will also include CRUD operations and some back end APIs.
 
 ## Development server
 
