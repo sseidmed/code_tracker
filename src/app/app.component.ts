@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'code-tracker';
+
+  links = [
+    { path: '/home', icon: 'home', title: 'Home' },
+    { path: '/goals', icon: 'view_list', title: 'Goals' },
+  ];
+
 }
+
+

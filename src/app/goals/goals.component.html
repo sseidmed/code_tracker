@@ -1,0 +1,38 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        Add A Coding Goal
+      </mat-card-title>
+    </mat-card-header>
+
+    <form [formGroup]="goalsForm">
+        <mat-card-content>
+            <div class="goal-form">
+                <mat-form-field>
+                    <input matInput placeholder="Goal"
+                      type="text" name="goal" required
+                      formControlName="goal"
+                      >
+                  </mat-form-field>
+      
+                  <mat-form-field>
+                      <mat-label>Select A Tag: </mat-label>
+      
+                      <mat-select name="tags">
+                          <mat-option value="new skill">New Skill</mat-option>
+                          <mat-option value="job related">Job Related</mat-option>
+                          <mat-option value="practice">Practice</mat-option>
+                          <mat-option value="social">Social</mat-option>
+                          <mat-option value="side project">Side Project</mat-option>
+                          <mat-option value="other">Other</mat-option>
+                      </mat-select>
+                  </mat-form-field>
+            </div>
+            
+        </mat-card-content>
+      </form>
+</mat-card>
+
+
+
+  
