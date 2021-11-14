@@ -10,12 +10,16 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { GoalsFormComponent } from './goals/goals-form/goals-form.component';
+import { GoalsListComponent } from './goals/goals-list/goals-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GoalsComponent,
-    HomeComponent
+    HomeComponent,
+    GoalsFormComponent,
+    GoalsListComponent
   ],
   imports: [
     AppRoutingModule,
