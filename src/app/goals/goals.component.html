@@ -28,8 +28,11 @@
                       </mat-select>
                   </mat-form-field>
             </div>
-            
         </mat-card-content>
+        <mat-card-actions>
+            <button [disabled]="!goalsForm.valid" type="submit" mat-button color="primary">Submit</button>
+            <button type="button" mat-button>Cancel</button>
+          </mat-card-actions>
       </form>
 </mat-card>
 
