@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
-
+import { GoalsService } from '../shared/services/goals.service';
 @Component({
   selector: 'app-goals',
   templateUrl: './goals.component.html',
@@ -8,14 +7,27 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class GoalsComponent implements OnInit {
 
-  constructor() { }
+  goals = null;
+  errorMessage = '';
+
+  constructor(private goalsService: GoalsService) { }
 
   ngOnInit(): void {
+    this.loadGoals();
   }
 
-  goalsForm = new FormGroup({
-    goal: new FormControl(''),
-    tag: new FormControl(''),
-  });
+  loadGoals() {
+    this.goalsService.all()
+      .subscribe(data => {
+        this.goals = data;
+        console.log("data", this.goals)
+      }),
+      error => {
+        this.errorMessage = error;
+      }
+    // this.goalsService.all();
+ 
+  }
+
 
 }
