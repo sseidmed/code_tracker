@@ -1,0 +1,24 @@
+{
+    "goals": [ 
+        {
+          "id": 1,
+          "goal": "Follow a tutorial",
+          "tag": "New skill"
+        },
+        {
+          "id": 2,
+          "goal": "Read an article",
+          "tag": "New skill"
+        },
+        {
+          "id": 3,
+          "goal": "Solve algorithms",
+          "tag": "Practice"
+        },
+        {
+            "id": 4,
+            "goal": "Work on my Angular app for tracking coding habits",
+            "tag": "Side Project"
+          }
+    ]
+}
